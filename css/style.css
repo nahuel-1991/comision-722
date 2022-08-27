@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content:space-between;
+}
+.navBar{
+    width: 500px;
+    display: flex;
+    font-size: 40px;
+    justify-content: space-around;
+}
+.navBar li{
+    list-style: none;
+}
+.navBar li a{
+    text-decoration: none;
+    color: black;
+   
+}
+.navBar li a:hover{
+    color: rgb(75, 240, 232);
+    font-size: 18px;
+}
+/**
+.sectionOne{
+    background-color: lightblue;
+}
+.sectionOne p:first-child{
+    background-color: blue;
+}
+.sectionOne p:nth-child(4), p:nth-child(6){
+    background-color: violet;
+}
+.sectionOne p:last-child{
+    background-color: bisque;
+}
+
+.sectionTwo p::first-line{
+    background-color: beige;
+    color: blue;
+}
+.sectionTwo p::first-letter{
+    background-color: rgb(245, 222, 220);
+    color: blue;
+    font-size: 60px;
+}
+*/
+main{
+    display:flex;
+    background-color: antiquewhite;
+    /*
+    flex-direction: row;
+    flex-wrap: wrap;*/
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /*
+    column-gap: 20px;
+    row-gap: 20px;*/
+    gap: 30px 20px; /**row / column**/
+    flex-wrap: wrap;
+    height: 500px;
+
+  
+}
+.cajita{
+    width: 200px;
+    height: 200px;
+ 
+}
+.item1 {
+    background-color: lightblue;
+    order: 5;
+}
+.item2 {
+    background-color: lightcoral;
+    order: 7;
+    align-self: flex-start;
+    flex-grow: 2;
+    flex-shrink: 5;
+}
+.item3 {
+    background-color: lightblue;
+    order: 3;
+    align-self: flex-end;
+}
+.item4 {
+    background-color: lightblue;
+    order: 4;
+}
+.item5 {
+    background-color: lightcoral;
+    order: 1;
+   
+}
+.item6 {
+    background-color: lightblue;
+    order: 6;
+}
+.item7 {
+    background-color: lightblue;
+    order: 2;
+}
